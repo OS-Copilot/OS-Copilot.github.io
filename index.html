@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>OS-Copilot: Towards Generalist Computer Agents with Self-Improvement</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">OS-Copilot: Towards Generalist Computer Agents with Self-Improvement</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://lividwo.github.io/zywu.github.io/" target="_blank">Zhiyong Wu</a><sup>1*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://hccngu.github.io/" target="_blank">Chengcheng Han</a><sup>2*</sup>,</span>
+                  <span class="author-block">
+                    Zichen Ding<sup>2</sup>,
+                  </span>
+                  <span class="author-block">
+                    Zhenmin Weng<sup>2</sup>,
+                  </span>
+                  
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">
+                      Zhoumianze Liu<sup>1</sup>,
+                    </span>
+                    <span class="author-block">
+                      Shunyu Yao<sup>3</sup>,
+                    </span>
+                    <span class="author-block">
+                      Tao Yu<sup>4</sup>,
+                    </span>
+                    <span class="author-block">
+                      Lingpeng Kong<sup>4</sup>
+                    </span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">
+                      <sup>1</sup>Shanghai AI Lab,
+                      <sup>2</sup>East China Normal University,
+                      <sup>3</sup>Princeton University,
+                      <sup>4</sup>University of Hong Kong</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/OS-Copilot/FRIDAY" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Autonomous interaction with the computer has been a longstanding challenge with great potential, and the recent proliferation of large language models (LLMs) has markedly accelerated progress in building digital agents. However, most of these agents are designed to interact with a narrow domain, such as a specific software or website. This narrow focus constrains their applicability for general computer tasks. To this end, we introduce OS-Copilot, a framework to build generalist agents capable of interfacing with comprehensive elements in an operating system (OS), including the web, code terminals, files, multimedia, and various third-party applications. We use OS-Copilot to create FRIDAY, a selfimproving embodied agent for automating general computer tasks. On GAIA, a general AI assistants benchmark, FRIDAY outperforms previous methods by 35%, showcasing strong generalization to unseen applications via accumulated skills from previous tasks. We also present numerical and quantitative evidence that FRIDAY learns to control and self-improve on Excel and Powerpoint with minimal supervision. Our OS-Copilot framework and empirical findings provide infrastructure and insights for future research toward more capable and general-purpose computer agents.
+          </p>
+        </div>
+        <div class="content">
+          <div class=" has-text-centered">
+            <img src="static/images/demo_4.png" alt="MY ALT TEXT"/>
+          </div>
+          <b class="subtitle is-size-6">
+            Running examples of FRIDAY when tasked with (1) preparing a focused working environment, (2) drawing a chart in Excel, and (3) creating a website for OS-Copilot. 
+          </b>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Demos of FRIDAY</h2>
+        <div class="content has-text-justified has-text-centered">
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            
+            <source src="static/videos/demo1.mp4"
+            type="video/mp4">
+          </video>
+          <b class="subtitle is-size-6">
+            <b>Demo1: FRIDAY helps the user to adjust the system theme.</b>
+          </b>
+        </div>
+        <div class="content has-text-justified has-text-centered">
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            
+            <source src="static/videos/demo2.mp4"
+            type="video/mp4">
+          </video>
+          <b class="subtitle is-size-6">
+            <b>Demo1: FRIDAY helps the user to organize specific documents.</b>
+          </b>
+        </div>
+        <div class="content has-text-justified has-text-centered">
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            
+            <source src="static/videos/demo3.mp4"
+            type="video/mp4">
+          </video>
+          <b class="subtitle is-size-6">
+            <b>Demo1: FRIDAY helps the user to build websites.</b>
+          </b>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">The OS-Copilot Framework</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce OS-Copilot, a framework to assist building OS-level language agents, accompanied by modular implementations for each component to facilitate agent development.
+          </p>
+        </div>
+        <h2 class="title is-4">Planner</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>The planner module</b> is tasked with reasoning over user requests and decomposing complex ones into simpler subtasks. In the OS environment, the planner needs to comprehend the capabilities of the agent to generate plans at the correct granularity. To achieve this, the planner must retrieve relevant information about the agent’s capabilities, such as in-house tools and past agent trajectories, to assist planning.
+          </p>
+        </div>
+
+        <h2 class="title is-4">Configurator</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>The configurator module</b> takes requests from users and subtasks from the planner, and configures them to perform the task at hand. Our design of the configurator is inspired by the biological nature of human brain, which has working, declarative and procedural memory.
+          </p>
+        </div>
+        <h2 class="title is-4">Actor</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>The actor comprises two stages</b>: executable action grounding and self-criticism. In the first stage, <b>the executor</b> takes input from the configurator and computes proposals for sequences of executable actions. Subsequently, <b>The critic module</b> will then access the outcomes of the execution, thereby formulating feedback to iteratively enhance both the execution and configurations.
+          </p>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            The image below shows the overview of the OS-Copilot Framework:
+          </p>
+        </div>
+        <div class="content">
+          <div class=" has-text-centered">
+            <img src="static/images/framework.png" alt="MY ALT TEXT"/>
+          </div>
+          <b class="subtitle is-size-6">
+            An overview of OS-Copilot reveals its <b>three major inter-connected components</b>: planner, configurator, and actor.
+          </b>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">The FRIDAY Agent</h2>
+        <div class="content has-text-justified">
+          <p>
+            Based on the OS-Copilot architecture, we custom-build FRIDAY, an intelligent embodied conversational agent that seamlessly integrates into the operating system to automate daily tasks. FRIDAY innovates in the design of a graphbased planner and a self-evolving configurator.
+          </p>
+        </div>
+        <h2 class="title is-4">Graph-based Planner</h2>
+        <div class="content has-text-justified">
+          <p>
+            Compared to humans who can only execute tasks sequentially, computers excel in their ability to parallel process a large number of tasks. To enable task parallelism, FRIDAY is equipped with a multi-entry graph-based planner. We leverage LLMs to formalize the plan into a directed acyclic graph, where arrows represent the interdependencies between tasks.In the scenario of parallel execution, each subtask will be accompanied by a subagent consisting of a distinct configurator and actor.
+          </p>
+        </div>
+        <div class="content">
+          <div class=" has-text-centered">
+            <img src="static/images/planner.png" alt="MY ALT TEXT"/>
+          </div>
+          <div class="subtitle is-size-6">
+            A running example of the planner, where each node represents a subtask. The numbers are solely for illustrative purposes and do not signify the execution order of subtasks.
+          </div>
+        </div>
+        <h2 class="title is-4">Self-evolving Configurator</h2>
+        <div class="content has-text-justified">
+          <p>
+            The design principle of FRIDAY’s configurator aims to maximize generality by endowing the agent with the capability for self-refinement and self-directed learning, achieved through (1) adapting behavior based on execution feedback and engaging in self-refinement; (2) learning to control previously unseen applications by autonomously proposing tasks and solving these tasks to accumulate relevant tools and knowledge.
+          </p>
+        </div>
+        <div class="content">
+          <div class=" has-text-centered">
+            <img src="static/images/working.png" alt="MY ALT TEXT"/>
+          </div>
+          <div class="subtitle is-size-6">
+            The architecture of working memory, with solid lines indicating message passing and dotted lines representing operations.
+          </div>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            As shown in the above image, upon receiving a subtask from the planner, FRIDAY’s Configuration Tracker module first compiles a configuration file, encompassing the task description, environmental states, and tool descriptions. If the construction of the config file is successful, it is then forwarded to the Executor for action generation and execution. In the event of execution failure, the Refiner module gathers feedback from the Critic and refines the responsible module through the use of the Refiner.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experiments</h2>
+        <h2 class="title is-4">Main Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            We evaluate FRIDAY on GAIA, a benchmark for general AI assistants featuring 466 carefully crafted real-world and challenging question-answering tasks. To solve tasks in GAIA, language agents need to browse the web, handle multi-modality, manipulate files, and reason over multiple steps to get answers.
+          </p>
+        </div>
+        <div class="content">
+          <div class=" has-text-centered">
+            <img src="static/images/gaia_result.png" alt="MY ALT TEXT"/>
+          </div>
+          <div class="subtitle is-size-6">
+            <b>Evaluation Results</b>: * denotes results averaged across the dev and test sets, while the remaining results are sourced from the GAIA leaderboard, which exclusively focuses on the private test set.
+          </div>
+        </div>
+      
+        <div class="content">
+          <div class=" has-text-centered">
+            <img src="static/images/per_domain.jpg" width="400" alt="MY ALT TEXT"/>
+          </div>
+          <div class="subtitle is-size-6">
+            <b>Scores (%) of FRIDAY on level-1 tasks per capability.</b>Numbers except FRIDAY are sourced from GAIA paper. As confirmed by GAIA’s authors, there are some numerical errors in GAIA’s Figure 5, so we omit the comparison with baselines here.
+          </div>
+        </div>
+        <h2 class="title is-4">Self-directed Learning</h2>
+        <div class="content has-text-justified">
+          <p>
+            We perform quantitative and qualitative evaluations to analysis FRIDAY’s self-directed learning capability.
+          </p>
+        </div>
+        <h2 class="title is-5">QUANTITATIVE ANALYSIS</h2>
+        <div class="content has-text-justified">
+          <p>
+            To showcase FRIDAY’s ability to master unfamiliar applications through self-learning, we conduct experiments on the SheetCopilot-20 dataset.This dataset includes 20 spreadsheet control tasks, covering various operations such as Formatting, Management, Charts, Pivot Tables, and Formulas, representing typical use cases of spreadsheets.
+          </p>
+        </div>
+        <div class="content">
+          <div class=" has-text-centered">
+            <img src="static/images/quantitative_study.png" width="550" alt="MY ALT TEXT"/>
+          </div>
+          <div class="subtitle is-size-6">
+            <b>Comparison of different agents on the SheetCopilot-20 dataset.</b>Pass@1 refers to the pass rate with each task being performed only once.We highlight the best results in bold.
+          </div>
+        </div>
+        <h2 class="title is-5">QUALITATIVE ANALYSIS</h2>
+        <div class="content has-text-justified">
+          <p>
+            In our qualitative analysis, we design a task to create a PowerPoint slide to introduce OS-Copilot. The specific content, font, font size, and other details required for the slide are elaborately described in the task instruction.
+          </p>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            As shown in the following image, without self-directed learning, FRIDAY struggles to effectively control font types, sizes, and the positioning and sizing of inserted images:
+          </p>
+        </div>
+        <div class="content">
+          <div class=" has-text-centered">
+            <img src="static/images/ppt0.png"  alt="MY ALT TEXT"/>
+            <div class="subtitle is-size-6">
+              FRIDAY <b>w/o self-directed learning.</b>
+            </div>
+          </div>
+          
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Nevertheless, following a period of self-directed learning, FRIDAY acquires various text box configuration tools, such as changing the text color, adjusting the font size of slide text, and modifying the line spacing of body text in PowerPoint presentations:
+          </p>
+        </div>
+        <div class="content">
+          <div class=" has-text-centered">
+            <img src="static/images/ppt1.png"  alt="MY ALT TEXT"/>
+            <div class="subtitle is-size-6">
+              FRIDAY <b>after learning text box control.</b>
+            </div>
+          </div>
+          
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Further exploration leads FRIDAY to learn how to adjust the size and position of inserted images, ultimately successfully completing the task:
+          </p>
+          
+        </div>
+        <div class="content">
+          <div class=" has-text-centered">
+            <img src="static/images/ppt2.png"  alt="MY ALT TEXT"/>
+            <div class="subtitle is-size-6">
+              FRIDAY <b>after mastering image insertion.</b>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        Your image here
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item">
+        Your image here
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item">
+        Your image here
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item">
+       Your image here
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+       Paper video.
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            Youtube embed code here
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        
+@article{wu_os-copilot_nodate,
+	title = {OS-Copilot: Towards Generalist Computer Agents with Self-Improvement},
+	year = {2024},
+	author = {Wu, Zhiyong and Han, Chengcheng and Ding, Zichen and Weng, Zhenming and Liu, Zhoumianze and Yao, Shunyu and Yu, Tao and Kong, Lingpeng},
+	
+}
+
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
